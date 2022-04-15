@@ -1,7 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
 .App {
   text-align: center;
 }
 
-.button {
+h1 {
+  margin: 30px;
+}
+
+input {
+  padding: 6px;
+}
+
+button.input-button {
+  padding: 6px 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 200px;
+  padding: 8px;
+  border: 2px solid black;
+  background-color: cadetblue;
+  color: white;
+}
+
+button.button-delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  margin-right: 5px;
   color: red;
+  padding: 0 6px;
 }

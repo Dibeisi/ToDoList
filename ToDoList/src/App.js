@@ -34,14 +34,21 @@ function App() {
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}
       />
-      <button onClick={() => addTask()}>Add</button>
+      <button className="input-button" onClick={() => addTask()}>
+        Add
+      </button>
       {/* 3. List Tasks */}
       <ul>
         {tasks.map((task) => {
           return (
             <li key={tasks.id}>
               {task.value}
-              <button onClick={() => deleteTask(task.id)}>X</button>
+              <button
+                className="button-delete"
+                onClick={() => deleteTask(task.id)}
+              >
+                X
+              </button>
             </li>
           );
         })}
